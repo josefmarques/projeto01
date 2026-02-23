@@ -1,0 +1,33 @@
+{
+  "name": "projeto01",
+  "version": "1.0.0",
+  "description": "Projeto Diário de Estudos",
+  "homepage": "https://github.com/josefmarques/projeto01#readme",
+  "bugs": {
+    "url": "https://github.com/josefmarques/projeto01/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/josefmarques/projeto01.git"
+  },
+  "license": "ISC",
+  "author": "",
+  "type": "module",
+  "main": "src/server.ts",
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsx watch --env-file=.env ./src/server.ts",
+    "start": "node --env-file=.env ./src/server.ts"
+  },
+  "dependencies": {
+    "express": "^5.2.1",
+    "helmet": "^8.1.0"
+  },
+  "devDependencies": {
+    "@types/express": "^5.0.6",
+    "@types/node": "^25.2.3",
+    "esbuild": "^0.27.3",
+    "tsx": "^4.21.0",
+    "typescript": "^5.9.3"
+  }
+}
